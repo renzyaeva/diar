@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('fonts/Comfortaa-Regular.ttf');
+}
+
+body {
+	font-family: 'Comfortaa', cursive;
+	background-color: #dddddd;
+}
+
+.main-menu {
+	font-size: 20px;
+}
