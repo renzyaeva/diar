@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>DiarGroup</title>
+	<link rel="stylesheet" href="styles/style.css">	
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img class="logo-img" alt="logo" src="images/logo.png">
+			</div>
+			<input type="checkbox" id="menu-checkbox">
+			<nav role="navigation" class="header-menu">
+				<label for="menu-checkbox" class="toggle-button" data-open="меню" onclick></label>
+				<ul class="main-menu">
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">о нас</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header-menu-touch">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="list-messenger">Ссылки на мессенджеры</div>
+	</header>
+	<main>
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio-container">
+				<!-- <div class="cards">
+					<div class="card">
+						<img src="images/p1.jpg" alt="">
+					</div>
+					<div class="card">
+						<img src="images/p1.jpg" alt="">
+					</div>
+					<div class="card">
+						<img src="images/p1.jpg" alt="">
+					</div>
+					<div class="card">
+						<img src="images/p1.jpg" alt="">
+					</div>
+				</div>
+				 -->
+				<div class="toggle">
+					<div>
+						<button id="all">все</button>
+						<button id="loft">лофт</button>
+						<button id="classic">классика</button>
+						<button id="minimalism">минимализм</button>
+						<button id="scandy">скандинавский</button>
+						<button id="modern">современный</button>
+					</div>
+				</div>
+				<div class="posts">
+					<div class="post loft" 			data-title="Галерея 1"><img src="images/p1.jpg" alt=""></div>
+					<div class="post classic" 		data-title="Галерея 2"><img src="images/p1.jpg" alt=""></div>
+					<div class="post modern" 		data-title="Галерея 3"><img src="images/p1.jpg" alt=""></div>
+					<div class="post minimalism" 	data-title="Галерея 4"><img src="images/p1.jpg" alt=""></div>
+					<div class="post loft" 			data-title="Галерея 5"><img src="images/p1.jpg" alt=""></div>
+					<div class="post minimalism" 	data-title="Галерея 6"><img src="images/p1.jpg" alt=""></div>
+					<div class="post scandy" 		data-title="Галерея 7"><img src="images/p1.jpg" alt=""></div>
+					<div class="post scandy" 		data-title="Галерея 8"><img src="images/p1.jpg" alt=""></div>
+					<div class="post modern" 		data-title="Галерея 9"><img src="images/p1.jpg" alt=""></div>
+					<div class="post classic" 		data-title="Галерея Н"><img src="images/p1.jpg" alt=""></div>					
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			crossorigin="anonymous">
+  	</script>
+  	<script src="js/script.js"></script>
+</body>
+</html>
