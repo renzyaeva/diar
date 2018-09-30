@@ -9,9 +9,7 @@
 <body>
 	<header>
 		<div class="header-container">
-			<div class="logo">
-				<img class="logo-img" alt="logo" src="images/logo.png">
-			</div>
+			<a href="#home"><div class="logo"></div></a>
 			<input type="checkbox" id="menu-checkbox">
 			<nav role="navigation" class="header-menu">
 				<label for="menu-checkbox" class="toggle-button" data-open="меню" onclick></label>
@@ -35,7 +33,12 @@
 					<h2>Проектная мастерская // Шоу-рум</h2>
 				</div>
 				<div class="slave-title">
-					<h3>Наш специалист приедет и сделает обмерный чертеж Вашего помещения. Если допуска к помещению нет - ничего страшного, подойдут и чертежи от застройщиков или ваши самостоятельные измерения.</h3>
+					<h3>
+						Создание такого гармоничного пространства, которое отвечает именно нашему духу времени,
+						его новейшим материалам, технологиям, отражает индивидуальность и внутренний мир человека, 
+						приносит тепло в наши сердца и бесконечно радует глаз... Только такие интерьеры, ландшафты,
+						такая архитектура не подвластны моде. трендам и живут во времени. Это наша дорога, наш путь...
+					</h3>
 				</div>
 				<div class="list-messenger">Ссылки на мессенджеры</div>
 			</div>
@@ -56,6 +59,24 @@
 		<section class="decoration about" id="about">
 			<div class="wrapper about-container">
 				<h4>О нас</h4>
+				<div class="about-us">
+					<div class="about-photo"></div>
+					<div class="about-text">
+						<div>Черных Надежда<br>руководитель отдела проектирования</div>
+						<div>Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом..
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.</div>
+						<div>Астахова Елена<br>руководитель отдела комплектации и строительства</div>
+						<div>Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом..
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.
+						Здесь будет много текста про фирму, но потом.Здесь будет много текста про фирму, но потом.</div>
+					</div>
+				</div>
+				<h4>Наша жизнь</h4>
 				<div class="starter-slider">
 					<div class="slide item1"></div>
 					<div class="slide item2"></div>
@@ -68,15 +89,30 @@
 		</section>
 		<section class="decoration contacts" id="contacts">
 			<div class="wrapper contacts-container">
-				<div class="contact-us">
-					<!-- <div><h4>Для заголовка контактов</h4></div> -->
+				<!-- <div class="contact-us"> -->
+					<h4>Контакты</h4>
+					<div class="map-place">
+						<div id="map"></div>
+						<div class="map-text">
+							<div class="address">440046<br>г.Пенза, ул. Мира, 65</div>
+							<div class="address-title">Отдел проектирования</div>
+							<div class="address-text">8(8412)45-37-19<br>diargroup@yandex.ru</div>
+							<div class="address-text">Елена Живица<br>руководитель группы дизайнеров<br>8-927-289-36-05</div>
+							<div class="address-text">Андрей Черных<br>руководитель группы архитекторов<br>8-927-388-18-06</div>
+							<div class="address-title">Отдел комплектации и строительства</div>
+							<div class="address-text">8(8412)45-37-18<br>8(8412)45-37-19</div>
+							<div class="address-text">Салон текстиля - Галина Калякина<br>diartgroup-t@mail.ru</div>
+							<div class="address-text">Салон отделочных материалов - Оксана Киселёва<br>diartgroup-s@mail.ru</div>
+							<div class="address-text">Салон мебели - Олимпиада Фадина<br>trevizo2005@mail.ru</div>
+						</div>
+					</div>
 					<div class="svg-wrapper">
 						<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
 						    <rect class="shape" height="60" width="320" />
-						    <div class="text">Связаться с нами</div>
+						    <div class="button-text">Связаться с нами</div>
 						</svg>
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 		</section>
 	</main>	
@@ -86,7 +122,8 @@
   			crossorigin="anonymous">
   	</script>
 	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   	<script src="js/script.js"></script>
+  	<script src="js/map.js"></script>
 </body>
 </html>
